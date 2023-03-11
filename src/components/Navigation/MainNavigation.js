@@ -5,7 +5,6 @@ import {
   AppBar,
   Box,
   Button,
-  Container,
   Hidden,
   IconButton,
   Toolbar,
@@ -13,8 +12,6 @@ import {
 } from "@mui/material";
 import Drawer from "./Drawer";
 import NavTabs from "./NavTabs";
-import MDButton from "../MDButton";
-import Image from "next/image";
 
 const MainNavigation = (props) => {
   const { mobileOpen, handleDrawerToggle, darkMode, setDarkMode } = props;
@@ -84,14 +81,14 @@ const MainNavigation = (props) => {
           </Box>
           <Hidden mdUp implementation="css">
             <a href="#contact">
-              <MDButton
+              <Button
                 variant="contained"
                 color="secondary"
                 type="button"
                 sx={{ backgroundColor: "inherit !important" }}
               >
                 contact
-              </MDButton>
+              </Button>
             </a>
           </Hidden>
           <Box sx={{ display: { xs: "none", md: "block" } }}>

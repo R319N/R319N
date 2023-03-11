@@ -40,7 +40,7 @@ const root = {
   backgroundSize: "150% !important",
   backgroundPositionX: "25% !important",
   transition: "all 150ms ease-in",
-  backgroundColor:"yellow",
+  backgroundColor:"yellow !important",
 
   "&:disabled": {
     pointerEvent: "none",

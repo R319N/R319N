@@ -24,7 +24,7 @@ const contained = {
   base: {
     backgroundColor: "#0077ff !important",
     minHeight: pxToRem(40),
-    color: light.main,
+    color: dark.main,
     padding: `${pxToRem(10)} ${pxToRem(12)}`,
     boxShadow: buttonShadow,
 
