@@ -19,7 +19,6 @@ import step from './components/stepper/step';
 import stepper from './components/stepper';
 import appBar from './components/appBar';
 import avatar from './components/avatar';
-import input from './components/form/input';
 import icon from './components/icon';
 import list from './components/list';
 import listItem from './components/list/listItem';

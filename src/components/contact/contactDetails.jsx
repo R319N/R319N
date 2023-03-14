@@ -6,43 +6,21 @@
 
 import Gene20Box from "@/components/Gene20Box/Gene20Box";
 import { contactDetailsData } from "@/constants";
-import {
-  Box,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  MenuItem,
-} from "@mui/material";
+import { Box, IconButton, List, ListItemText, MenuItem } from "@mui/material";
 import React from "react";
 
 export default function ContactDetails() {
   return (
-    <Gene20Box
-      sx={{
-        padding: "2vh",
-        margin: "5vw",
-        fontVariant: "small-caps",
-
-        display: "flex",
-
-        justifyContent: "center",
-        alignItems: "center",
-        border: "1px solid black",
-        borderRadius: "10px",
-      }}
-    >
+    <Gene20Box className="container-box">
       <List
+        className="column-list"
         sx={{
-          display: "flex",
           flexDirection: { sm: "column" },
-          justifyContent: "space-between",
-          width: "100%",
         }}
       >
-        {contactDetailsData.map((item, key) => (
+        {contactDetailsData.map((item, index) => (
           <MenuItem
-            key={item.name}
+            key={index}
             component={Box}
             link={item.link}
             color="secondary"

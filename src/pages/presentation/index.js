@@ -1,3 +1,4 @@
+import React from "react";
 import Gene20Box from "@/components/Gene20Box/Gene20Box";
 import ParticlesBackground from "@/components/particlesBackground";
 import styles from "@/styles";
@@ -5,8 +6,9 @@ import { staggerContainer } from "@/utils/motion";
 import { gene20BaseTheme } from "@/utils/theme";
 import { Box, useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
-import React from "react";
-import PortfolioPresentation from "./portfolioPresentation";
+import PortfolioPresentation from "@/components/PresentationComponents/portfolioPresentation";
+
+
 
 const Presentation = () => {
   const theme = gene20BaseTheme;

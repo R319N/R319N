@@ -10,8 +10,7 @@ const appBar = {
   styleOverrides: {
     root: {
       background: rgba(secondary.main, 0.3),
-      //
-      // boxShadow: "none",
+      
     },
   },
 };

@@ -10,8 +10,8 @@ import JSSkills from "./jsSkills";
 import StackSkills from "./stacks";
 
 const MySkills = () => {
-  const header = <TitleText title="My Portfolio" textStyles="text-center" />;
-  const subheader = <TypingText title="skills" textStyles="text-center" />;
+  const header = <TitleText title="stack" textStyles="text-center" />;
+  const subheader = <TypingText title="these are the technologies i use on my projects" textStyles="text-center" />;
   return (
     <motion.div
       variants={staggerContainer}

@@ -7,10 +7,10 @@ const drawer = {
   styleOverrides: {
     root: {
       boxShadow: boxShadows.lg,
+      backgroundColor: transparent.main,
 
       "&:hover": {
         boxShadow: boxShadows.lg,
-        backgroundColor: transparent.main,
       },
       "& :: -webkit-scrollbar": {
         width: "0.4em",

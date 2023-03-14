@@ -1,7 +1,7 @@
 import boxShadows from "../base/boxShadows";
 import colors from "../base/colors";
 
-const { transparent, primary, secondary } = colors;
+const { transparent, primary } = colors;
 
 const drawer = {
   styleOverrides: {

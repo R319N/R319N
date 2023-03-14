@@ -29,12 +29,12 @@ const colors = {
 
   primary: {
     main: "rgb(7, 143, 255)",
-    focus: "rgb(7, 143, 255)",
+    focus: "rgb(0, 96, 175)",
   },
 
   secondary: {
     main: "rgb(172, 216, 255)",
-    focus: "rgb(172, 216, 255)",
+    focus: "rgb(83, 175, 255)",
   },
 
   info: {

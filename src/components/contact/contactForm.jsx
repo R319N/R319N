@@ -1,7 +1,6 @@
 import { Send } from "@mui/icons-material";
 import { Box, Button, InputLabel, TextField } from "@mui/material";
-import { motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 
 const ContactForm = (props) => {
   const fullnameInputRef = useRef();
@@ -52,7 +51,6 @@ const ContactForm = (props) => {
               type="text"
               id="email"
               ref={emailInputRef}
-              // variant="standard"
               label="email"
               required
               fullWidth
@@ -66,7 +64,6 @@ const ContactForm = (props) => {
               type="text"
               id="message"
               ref={messageInputRef}
-              // variant="standard"
               label="message"
               required
               multiline

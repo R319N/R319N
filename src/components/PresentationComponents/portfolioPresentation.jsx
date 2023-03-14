@@ -17,7 +17,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import PresentationNavigation from "./components/navigationButtons";
+import PresentationNavigation from "./navigationButtons";
 
 const PortfolioPresentation = (props) => {
   const { phone } = props;
@@ -27,12 +27,15 @@ const PortfolioPresentation = (props) => {
       textStyles="text-center"
     />
   );
-  const header = "hello world";
-  // <TitleText title="WELCOME TO MY PORTFOLIO PAGE" textStyles="text-center" />
+
   return (
     <Box
       height="100vh"
-      sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+      }}
     >
       <Grid
         sx={{

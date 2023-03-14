@@ -1,13 +1,14 @@
 import styles from "@/styles";
-import { staggerContainer } from "@/utils/motion";
-import { Box, Card, CardHeader, Container, Grid } from "@mui/material";
+import { Card, CardHeader, Container, Grid } from "@mui/material";
 import { motion } from "framer-motion";
+import { slideIn, staggerContainer } from "@/utils/motion";
 import React from "react";
-import ContactDetails from "./contactDetails";
 import { TitleText, TypingText } from "@/components/CustomTexts";
-import ContactForm from "./contactForm";
-import { slideIn } from "@/utils/motion";
-import MobileContacts from "./mobileContacts";
+import {
+  ContactDetails,
+  ContactForm,
+  MobileContacts,
+} from "@/components/contact";
 
 const ContactPage = () => {
   const subHeader = (
@@ -26,7 +27,7 @@ const ContactPage = () => {
         <Card
           sx={{
             display: "flex",
-            padding:"1rem",
+            padding: "1rem",
             border: "1px solid primary",
             boxShadow: (theme) => theme.boxShadows.lg,
             borderRadius: (theme) => theme.borders.borderRadius.lg,

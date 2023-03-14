@@ -1,34 +1,15 @@
-/**
-=========================================================
-* Material Dashboard 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// Material Dashboard 2 React Base Styles
-
-// Material Dashboard 2 React Helper Functions
-
 import colors from "../../base/colors";
 import typography from "../../base/typography";
 import pxToRem from "../../functions/pxToRem";
 
-const { white, text, info, secondary, primary } = colors;
+const { black, dark, secondary, primary } = colors;
 const { size } = typography;
 
 const contained = {
   base: {
+    color: dark.main,
     backgroundColor: secondary.main,
     minHeight: pxToRem(40),
-    color: white.main,
     padding: `${pxToRem(10)} ${pxToRem(12)}`,
 
     "&:hover": {

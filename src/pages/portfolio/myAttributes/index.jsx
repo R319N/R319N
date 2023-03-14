@@ -18,12 +18,6 @@ import Image from "next/image";
 import { Navigation } from "@mui/icons-material";
 
 const Attributes = () => {
-  const subHeader = (
-    <TypingText
-      title="| these are attributes i have done so far "
-      textStyles="text-center"
-    />
-  );
   const header = <TitleText title="attributes" textStyles="text-center" />;
   return (
     <motion.div
@@ -33,7 +27,7 @@ const Attributes = () => {
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <CardHeader title={header} subheader={subHeader} />
+      <CardHeader title={header} />
       <Grid container spacing={2}>
         {attributes.map((attribute, index) => (
           <Grid item xs={12} md={3} key={index}>

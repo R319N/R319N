@@ -10,9 +10,9 @@ export default function SocialContacts() {
       sx={{
         display: "flex",
         justifyContent: "center",
-        justifyItems: "center",
+        alignItems: "center",
         padding: "0",
-        fontVariant: "small-caps",
+        fontVariant: "all-small-caps",
       }}
     >
       <Grid
@@ -23,12 +23,10 @@ export default function SocialContacts() {
         {socialMediaRoutes.map((social, index) => (
           <Box
             xs={2}
-            key={social.name}
+            key={index}
             sx={{
               transition: "transform 0.2s linear",
               display: "flex",
-              // margin: "10px",
-
               "&:hover": {
                 transform: "scale(1.3)",
               },

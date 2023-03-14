@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Close, Menu } from "@mui/icons-material";
 
 import {
@@ -14,8 +14,8 @@ import Drawer from "./Drawer";
 import NavTabs from "./NavTabs";
 
 const MainNavigation = (props) => {
-  const { mobileOpen, handleDrawerToggle, darkMode, setDarkMode } = props;
-  const [searchOpen, setSearchOpen] = useState(false);
+  const { mobileOpen, handleDrawerToggle } = props;
+  // const [searchOpen, setSearchOpen] = useState(false);
 
   return (
     <Box
@@ -50,6 +50,7 @@ const MainNavigation = (props) => {
                 aria-label="open drawer"
                 onClick={handleDrawerToggle}
                 edge="start"
+                sx={{ borderRadius: "10px" }}
               >
                 {!mobileOpen ? <Menu /> : <Close />}
               </IconButton>
@@ -61,7 +62,7 @@ const MainNavigation = (props) => {
                   textTransform: "uppercase",
                   display: "flex",
                   justifySelf: "center",
-                  color: "aqua",
+                  color:(theme)=> theme.palette.primary.main ,
                 }}
               >
                 wilfred
@@ -81,12 +82,7 @@ const MainNavigation = (props) => {
           </Box>
           <Hidden mdUp implementation="css">
             <a href="#contact">
-              <Button
-                variant="contained"
-                color="secondary"
-                type="button"
-                sx={{ backgroundColor: "inherit !important" }}
-              >
+              <Button variant="contained" color="primary" type="button">
                 contact
               </Button>
             </a>

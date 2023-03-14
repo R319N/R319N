@@ -2,7 +2,6 @@ import Gene20Drawer from "@/components/Gene20Drawer/Gene20Drawer";
 import Link from "@/utils/link";
 import {
   Box,
-  Button,
   Divider,
   Hidden,
   List,
@@ -56,8 +55,7 @@ const Drawer = (props) => {
                           align="left"
                           sx={{ fontVariant: "all-small-caps" }}
                         >
-                          {" "}
-                          {item.name}
+                          <Typography> {item.name}</Typography>
                         </ListItemText>
                       </ListItemButton>
                     </ListItem>

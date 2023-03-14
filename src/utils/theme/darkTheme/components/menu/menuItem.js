@@ -1,25 +1,8 @@
-/**
-=========================================================
-* Material Dashboard 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import borders from "../../base/borders";
 import colors from "../../base/colors";
 import typography from "../../base/typography";
 import pxToRem from "../../functions/pxToRem";
 import rgba from "../../functions/rgba";
-
-// Material Dashboard 2 React base styles
 
 
 const { dark, white } = colors;
@@ -28,7 +11,7 @@ const { size } = typography;
 
 const menuItem = {
   styleOverrides: {
-    root: {
+    root: { 
       minWidth: pxToRem(160),
       minHeight: "unset",
       padding: `${pxToRem(4.8)} ${pxToRem(16)}`,

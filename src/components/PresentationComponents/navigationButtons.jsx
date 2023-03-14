@@ -1,9 +1,8 @@
 import Gene20Box from "@/components/Gene20Box/Gene20Box";
-import Link from "@/utils/link";
-import { Button, Stack } from "@mui/material";
+import { Button, Hidden, Stack, Toolbar } from "@mui/material";
 import React from "react";
 
-export default function PresentationNavigation(props) {
+const PresentationNavigation = (props) => {
   const { phone } = props;
   return (
     <Gene20Box
@@ -14,20 +13,20 @@ export default function PresentationNavigation(props) {
         justifyItems: "center",
       }}
     >
-      <Stack spacing={2}>
-        <Link href="/portfolio">
+      <Stack spacing={2} implementation="css" sx={{zIndex:99}}>
+        <a href="#portfolio">
           <Button
             variant="contained"
-            color="primary"
+            type="button"
             sx={{
               width: phone ? "40vw" : "20vw",
             }}
           >
             view Portfolio
           </Button>
-        </Link>
+        </a>
 
-        <Link href="/about">
+        <a href="#about">
           <Button
             variant="outlined"
             color="secondary"
@@ -38,8 +37,9 @@ export default function PresentationNavigation(props) {
           >
             download cv
           </Button>
-        </Link>
+        </a>
       </Stack>
     </Gene20Box>
   );
-}
+};
+export default PresentationNavigation;
