@@ -109,22 +109,9 @@ function PresentationHeader(props) {
 
             <Divider />
           </Gene20Box>
-          {/* <Box
-            sx={{
-              width: "100%",
-              align: "center",
-              height: "40%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          ></Box> */}
+
           <Box sx={{ width: "100%" }}>
-            <PresentationNavigation
-              phone={props.phone}
-              tablet={props.tablet}
-              laptop={props.laptop}
-            />
+            <PresentationNavigation phone={phone} />
           </Box>
         </Grid>
       </Grid>

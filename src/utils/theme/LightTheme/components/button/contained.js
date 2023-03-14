@@ -1,13 +1,10 @@
-import boxShadows from "../../base/boxShadows";
 import colors from "../../base/colors";
 import typography from "../../base/typography";
 import boxShadow from "../../functions/boxShadow";
 import pxToRem from "../../functions/pxToRem";
 
-const { secondary, primary, light, dark } = colors;
+const { secondary, primary, light } = colors;
 const { size } = typography;
-const { colored } = boxShadows;
-const { color } = secondary;
 
 const buttonShadow = `${boxShadow(
   [0, 3],
@@ -22,7 +19,7 @@ const buttonShadow = `${boxShadow(
 )}`;
 const contained = {
   base: {
-    backgroundColor: "#0077ff !important",
+    backgroundColor: primary.main,
     minHeight: pxToRem(40),
     color: light.main,
     padding: `${pxToRem(10)} ${pxToRem(12)}`,
@@ -30,13 +27,12 @@ const contained = {
 
     "&:active, &:active:focus, &:active:hover": {
       opacity: 0.85,
-      backgroundColor: "#0000ff !important",
+      backgroundColor: primary.focus,
     },
 
     "& .material-icon, .material-icons-round, svg": {
       fontSize: `${pxToRem(16)} !important`,
     },
-   
   },
 
   small: {

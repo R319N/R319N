@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { staggerContainer } from "@/utils/motion";
-import Creator from "./creator";
 import { Container } from "@mui/material";
 import styles from "../../styles";
+import Creator from "../../components/creator";
 
 const AboutPage = () => {
   return (

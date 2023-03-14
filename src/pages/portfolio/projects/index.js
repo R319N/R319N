@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn} from "@/utils/motion";
+import { fadeIn, staggerContainer } from "@/utils/motion";
 import {
   Box,
   Button,
@@ -14,17 +14,24 @@ import { TitleText, TypingText } from "@/components/CustomTexts";
 import { myProjects } from "@/constants";
 import Image from "next/image";
 import { Navigation } from "@mui/icons-material";
+import styles from "@/styles";
 
 const Projects = () => {
   const subHeader = (
     <TypingText
-      title="| these are projects i have done so far "
+      title="| this is a list of some of the projects i have done so far "
       textStyles="text-center"
     />
   );
   const header = <TitleText title="projects" textStyles="text-center" />;
   return (
-    <Container>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+    >
       <CardHeader title={header} subheader={subHeader} />
       <Grid container spacing={2}>
         {myProjects.map((project, index) => (
@@ -40,8 +47,10 @@ const Projects = () => {
                   p: "0.5rem",
                 }}
               >
-                <Typography variant="h4" sx={{ fontVariant: "all-small-caps" }}>
+                <Typography variant="h4" color="secondary" sx={{ fontVariant: "all-small-caps" }}>
+                 
                   {project.title}
+                  <hr/>
                 </Typography>
                 <Box sx={{ position: "relative" }}>
                   <Box
@@ -75,8 +84,7 @@ const Projects = () => {
                     </Button>
                   </Box>
                 </Box>
-
-                <Typography variant="body2" sx={{ fontVariant: "small-caps" }}>
+                <Typography variant="body2" sx={{ fontVariant: "all-small-caps" }}>
                   {project.technologies}
                 </Typography>
               </Paper>
@@ -84,7 +92,7 @@ const Projects = () => {
           </Grid>
         ))}
       </Grid>
-    </Container>
+    </motion.div>
   );
 };
 

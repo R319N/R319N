@@ -1,10 +1,9 @@
 // import PortfolioPresentation from "./presentation/portfolioPresentation/portfolioPresentation";
 import AboutPage from "./about";
-import { Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
 import ContactPage from "./contact";
-import PortFolioPage from "./portfolio";
-import Presentation from "./presentation/portfolioPresentation";
-import Projects from "./portfolio/projects";
+import Presentation from "./presentation";
+import PortFolio from "./portfolio";
 
 const HomePage = (props) => {
   return (
@@ -19,8 +18,7 @@ const HomePage = (props) => {
         }}
       >
         <AboutPage />
-        <PortFolioPage />
-        <Projects />
+        <PortFolio />
         <ContactPage />
       </Box>
     </Box>

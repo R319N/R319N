@@ -12,6 +12,7 @@ const cardHeader = {
       marginTop: 0,
       marginBottom: 0,
       padding: `${pxToRem(8)} ${pxToRem(24)} ${pxToRem(24)}`,
+      fontVariant:"all-small-caps"
     },
     title: {
       color: secondary.main,

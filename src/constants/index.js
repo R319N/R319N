@@ -1,7 +1,6 @@
-
-import EmailButton from "@/pages/contact/emailButton";
-import PhoneCallButton from "@/pages/contact/phoneButton";
-import WhatsAppButton from "@/pages/contact/whatsAppButton";
+import EmailButton from "@/components/emailButton";
+import PhoneCallButton from "@/components/phoneButton";
+import WhatsAppButton from "@/components/whatsAppButton";
 import colors from "@/utils/theme/LightTheme/base/colors";
 import {
   Email,
@@ -51,38 +50,31 @@ export const attributes = [
 export const myProjects = [
   {
     id: "project-1",
-    imgUrl: "/codeback.jpg",
+    imgUrl: "/igugu.png",
     title: "igugu projects",
     description: "",
     technologies: "react JS, mui5, formik ",
   },
   {
-    id: "world-2",
-    imgUrl: "/planet-02.png",
+    id: "project-2",
+    imgUrl: "/moti.png",
     title: "moti",
     description: "",
     technologies: "react JS, mui5, formik ",
   },
   {
-    id: "world-3",
-    imgUrl: "/planet-03.png",
+    id: "project-3",
+    imgUrl: "/generation.png",
     title: "genexx",
     description: "",
     technologies: "next JS, mui5, ",
   },
   {
-    id: "world-4",
-    imgUrl: "/planet-04.png",
+    id: "project-4",
+    imgUrl: "/metaversus.png",
     title: "metaverse",
     description: "",
     technologies: "next JS, tailwind css, framer-motion  ",
-  },
-  {
-    id: "world-5",
-    imgUrl: "/planet-05.png",
-    title: "delicious point",
-    description: "",
-    technologies: "html, css, javascript, bootstrap  ",
   },
 ];
 

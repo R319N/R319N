@@ -4,7 +4,7 @@ import React from "react";
 
 const ThemeToogler = ({ darkMode, setDarkMode }) => {
   return (
-    <Box sx={{ position: "relative", bottom: "0" }}>
+    <Box sx={{ position: "relative", bottom: "5vh" }}>
       <IconButton
         onClick={() => setDarkMode(!darkMode)}
         color="secondary"

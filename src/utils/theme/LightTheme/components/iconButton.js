@@ -1,16 +1,17 @@
 import boxShadows from "../base/boxShadows";
 import colors from "../base/colors";
 
-const { primary, background } = colors;
+const { primary } = colors;
 
 const iconButton = {
   styleOverrides: {
     root: {
       boxShadow: boxShadows.lg,
+      backgroundColor: primary.main,
 
       "&:hover": {
         boxShadow: boxShadows.xxlg,
-        backgroundColor: background.paper,
+        backgroundColor: primary.focus,
       },
     },
   },
