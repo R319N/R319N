@@ -1,6 +1,7 @@
 import createCache from '@emotion/cache';
 
 const isBrowser = typeof document !== 'undefined';
+// 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
 
 // On the client side, Create a meta tag at the top of the <head> and set it as insertionPoint.
 // This assures that MUI styles are loaded first.

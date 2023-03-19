@@ -26,7 +26,7 @@ const PresentationNavigation = (props) => {
           </Button>
         </a>
 
-        <a href="#about">
+        <a href="/wilfred-reign.pdf">
           <Button
             variant="outlined"
             color="secondary"
@@ -34,6 +34,7 @@ const PresentationNavigation = (props) => {
               width: phone ? "40vw" : "20vw",
               color: "white",
             }}
+            download
           >
             download cv
           </Button>
@@ -42,4 +43,5 @@ const PresentationNavigation = (props) => {
     </Gene20Box>
   );
 };
+//commit this
 export default PresentationNavigation;
