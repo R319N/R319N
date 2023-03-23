@@ -28,8 +28,10 @@ const MyApp = (props) => {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link rel="shortcut icon" href="/icons/favicon.ico" />
+        <title>WILFRED REIGN</title>
       </Head>
-      <title>wilfred reign</title>
+      
       <ThemeProvider theme={darkMode ? gene20DarkTheme : gene20BaseTheme}>
         <Paper variant="outlined" sx={{ minHeight: "100vh", height: "100%", overflow: "hidden" }}>
           <Layout>

@@ -15,7 +15,6 @@ const PortFolio = () => {
         m: "12vh 0",
         p: "0vh 2vh",
         overflow: "hidden",
-        backgroundColor: (theme) => theme.palette.background.navigation,
       }}
     >
       <motion.div

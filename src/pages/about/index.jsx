@@ -9,7 +9,7 @@ const AboutPage = () => {
   return (
     <Container
       sx={{
-        m: "12vh 0",
+        m: "2vh 0",
         overflow: "hidden",
         minHeight: "80vh",
         display: "flex",

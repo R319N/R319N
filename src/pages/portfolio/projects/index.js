@@ -47,10 +47,13 @@ const Projects = () => {
                   p: "0.5rem",
                 }}
               >
-                <Typography variant="h4" color="secondary" sx={{ fontVariant: "all-small-caps" }}>
-                 
+                <Typography
+                  variant="h4"
+                  color="secondary"
+                  sx={{ fontVariant: "all-small-caps" }}
+                >
                   {project.title}
-                  <hr/>
+                  <hr />
                 </Typography>
                 <Box sx={{ position: "relative" }}>
                   <Box
@@ -75,16 +78,20 @@ const Projects = () => {
                         },
                       }}
                     />
+
                     <Button
                       sx={{ position: "absolute" }}
                       variant="contained"
                       endIcon={<Navigation />}
                     >
-                      visit website
+                      <a href={project.pageUrl}>visit website</a>
                     </Button>
                   </Box>
                 </Box>
-                <Typography variant="body2" sx={{ fontVariant: "all-small-caps" }}>
+                <Typography
+                  variant="body2"
+                  sx={{ fontVariant: "all-small-caps" }}
+                >
                   {project.technologies}
                 </Typography>
               </Paper>

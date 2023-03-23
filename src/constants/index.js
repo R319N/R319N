@@ -54,6 +54,7 @@ export const myProjects = [
     title: "igugu projects",
     description: "",
     technologies: "react JS, mui5, formik ",
+    pageUrl:"https://igugu-empire-projects.netlify.app"
   },
   {
     id: "project-2",
@@ -61,6 +62,7 @@ export const myProjects = [
     title: "moti",
     description: "",
     technologies: "react JS, mui5, formik ",
+    pageUrl:"https://moti.netlify.app"
   },
   {
     id: "project-3",
