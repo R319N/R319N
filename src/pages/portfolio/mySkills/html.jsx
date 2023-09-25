@@ -1,7 +1,14 @@
 import { TypingText } from "@/components/CustomTexts";
 import { html } from "@/constants";
 import { fadeIn } from "@/utils/motion";
-import { Avatar, Box, CardHeader, Paper, Typography } from "@mui/material";
+
+// *** MUI5 imports ***
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import CardHeader from "@mui/material/CardHeader";
+import Paper from "@mui/material/Paper";
+import Avatar from "@mui/material/Avatar";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";

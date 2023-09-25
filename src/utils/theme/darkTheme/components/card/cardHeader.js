@@ -3,7 +3,7 @@ import typography from "../../base/typography";
 import pxToRem from "../../functions/pxToRem";
 
 // Material Dashboard 2 React Helper Functions
-const { secondary, primary } = colors;
+const { secondary, primary ,white} = colors;
 const { fontWeightLighter, fontWeightBold } = typography;
 
 const cardHeader = {
@@ -15,13 +15,13 @@ const cardHeader = {
       fontVariant:"all-small-caps"
     },
     title: {
-      color: secondary.main,
+      color: white.main,
       fontWeight: fontWeightBold,
     },
     subheader: {
-      color: primary.main,
+      color: white.main,
       fontWeight: fontWeightLighter,
-      fontSize: "14px",
+      fontSize: "16px",
     },
   },
 };

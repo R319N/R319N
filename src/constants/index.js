@@ -54,7 +54,7 @@ export const myProjects = [
     title: "igugu projects",
     description: "",
     technologies: "react JS, mui5, formik ",
-    pageUrl:"https://igugu-empire-projects.netlify.app"
+    pageUrl: "https://igugu-empire-projects.netlify.app",
   },
   {
     id: "project-2",
@@ -62,7 +62,7 @@ export const myProjects = [
     title: "moti",
     description: "",
     technologies: "react JS, mui5, formik ",
-    pageUrl:"https://moti.netlify.app"
+    pageUrl: "https://moti.netlify.app",
   },
   {
     id: "project-3",
@@ -77,6 +77,22 @@ export const myProjects = [
     title: "metaverse",
     description: "",
     technologies: "next JS, tailwind css, framer-motion  ",
+  },
+  {
+    id: "project-5",
+    imgUrl: "/shoe-freaks-official.png",
+    title: "Shoe Freaks South-Africa",
+    description:
+      "shoe freaks is an online store that sells shoes to its customers",
+    pageUrl: "https://shoe-freaks-official.vercel.app/",
+  },
+  {
+    id: "project-6",
+    imgUrl: "/the-blue-boutique.png",
+    title: "The Blue Boutique",
+    description: "the blue boutique is a shop that sells a variety of clothing",
+    technologies: "react JS, mui5, formik ",
+    pageUrl: "https://the-blue-boutique.vercel.app",
   },
 ];
 

@@ -2,20 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import styles from "@/styles";
-import {
-  Box,
-  Button,
-  Card,
-  CardHeader,
-  CardMedia,
-  Grid,
-  Paper,
-  Typography,
-} from "@mui/material";
-import { TitleText, TypingText } from "@/components/CustomTexts";
+
+// *** MUI5 imports ***
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import CardHeader from "@mui/material/CardHeader";
+import CardMedia from "@mui/material/CardMedia";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+
+import { TitleText } from "@/components/CustomTexts";
 import { attributes } from "@/constants";
 import Image from "next/image";
-import { Navigation } from "@mui/icons-material";
 
 const Attributes = () => {
   const header = <TitleText title="attributes" textStyles="text-center" />;

@@ -21,13 +21,13 @@ import colors from "../../base/colors";
 import typography from "../../base/typography";
 import pxToRem from "../../functions/pxToRem";
 
-const { transparent, light, info, secondary } = colors;
+const { transparent, light, info, secondary, white } = colors;
 const { size } = typography;
 
 const outlined = {
   base: {
     minHeight: pxToRem(40),
-    color: light.main,
+    color: white.main,
     borderColor: light.main,
     padding: `${pxToRem(10)} ${pxToRem(24)}`,
 

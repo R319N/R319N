@@ -1,7 +1,12 @@
 import { TitleText, TypingText } from "@/components/CustomTexts";
 import styles from "@/styles";
 import { staggerContainer } from "@/utils/motion";
-import { Box, CardHeader, Grid } from "@mui/material";
+
+// *** MUI5 imports ***
+import Box from "@mui/material/Box";
+import CardHeader from "@mui/material/CardHeader";
+import Grid from "@mui/material/Grid";
+
 import { motion } from "framer-motion";
 import React from "react";
 import CssSkills from "./cssSkills";
@@ -11,7 +16,12 @@ import StackSkills from "./stacks";
 
 const MySkills = () => {
   const header = <TitleText title="stack" textStyles="text-center" />;
-  const subheader = <TypingText title="these are the technologies i use on my projects" textStyles="text-center" />;
+  const subheader = (
+    <TypingText
+      title="these are the technologies i use on my projects"
+      textStyles="text-center"
+    />
+  );
   return (
     <motion.div
       variants={staggerContainer}

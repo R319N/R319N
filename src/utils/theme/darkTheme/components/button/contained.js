@@ -2,12 +2,12 @@ import colors from "../../base/colors";
 import typography from "../../base/typography";
 import pxToRem from "../../functions/pxToRem";
 
-const { black, dark, secondary, primary } = colors;
+const { black, white, secondary, primary } = colors;
 const { size } = typography;
 
 const contained = {
   base: {
-    color: dark.main,
+    color: white.main,
     backgroundColor: secondary.main,
     minHeight: pxToRem(40),
     padding: `${pxToRem(10)} ${pxToRem(12)}`,

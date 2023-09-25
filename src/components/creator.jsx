@@ -1,15 +1,17 @@
 import { motion } from "framer-motion";
 import { TitleText, TypingText } from "@/components/CustomTexts";
-import {
-  Box,
-  Card,
-  CardContent,
-  CardHeader,
-  CardMedia,
-  Divider,
-  Grid,
-  Typography,
-} from "@mui/material";
+
+// *** MUI5 imports ***
+import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
+import Box from "@mui/material/Box";
+// import Card from "@mui/material/Card";
+import Paper from "@mui/material/Paper";
+import CardHeader from "@mui/material/CardHeader";
+import CardMedia from "@mui/material/CardMedia";
+import Grid from "@mui/material/Grid";
+import CardContent from "@mui/material/CardContent";
+
 import React from "react";
 import Image from "next/image";
 import { fadeIn, planetVariants } from "@/utils/motion";
@@ -48,22 +50,23 @@ const Creator = () => {
           </Box>
           <Typography
             variant="body2"
-            sx={{mb:"2vh"}}
+            sx={{ mb: "2vh" }}
             className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45px] leading-[39px] text-white"
           >
-            My Name Is Wilfred Reign, I Am A Self Taught Front-End Web
-            Developer And Junior Full-Stake Web Developer.
+            My Name Is Wilfred Reign, I Am A Self Taught Front-End Web Developer
+            And Junior Full-Stake Web Developer.
           </Typography>
           <Typography
             variant="body2"
             className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45px] leading-[39px] text-white"
-          >I Started Out Web Development In Late 2019, Learning Basics Like Css,
-          Html, Javascript. Thanks To Web Dev Learning Apps Like Grasshopper,
-          Sololearn, Mimo Code And A Class Of Youtube Channels Coming Up With
-          Dedicated Teachers, Even With Limited Programming background I Managed
-          To Learn Front-End, Working With Javascript Frameworks Particularly
-          React Js.</Typography>
-          
+          >
+            I Started Out Web Development In Late 2019, Learning Basics Like
+            Css, Html, Javascript. Thanks To Web Dev Learning Apps Like
+            Grasshopper, Sololearn, Mimo Code And A Class Of Youtube Channels
+            Coming Up With Dedicated Teachers, Even With Limited Programming
+            background I Managed To Learn Front-End, Working With Javascript
+            Frameworks Particularly React Js.
+          </Typography>
         </CardContent>
       </motion.div>
     </Box>
@@ -73,20 +76,26 @@ const Creator = () => {
 
     // sx={{ backgroundColor: (theme) => theme.palette.background.navigation }}
     >
-     <Typography
-          variant="h3"
-          color="primary"
-          sx={{
-            fontVariant: "all-small-caps",
-            fontWeight: "bold",
-            margin: "1rem",
-          }}
-          align="right"
-        >
-      about me
-          <hr component={Divider} color="secondary" />
-        </Typography>
-      <Card>
+      <Typography
+        variant="h3"
+        color="primary"
+        sx={{
+          fontVariant: "all-small-caps",
+          fontWeight: "bold",
+          margin: "1rem",
+        }}
+        align="right"
+      >
+        about me
+        <hr component={Divider} color="secondary" />
+      </Typography>
+      <Paper
+        sx={{
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          p: "0.5rem",
+          height: "100%",
+        }}
+      >
         <Grid container spacing={2} sx={{}}>
           <Grid item xs={12} md={6}>
             <Box
@@ -120,7 +129,7 @@ const Creator = () => {
             {aboutMe}
           </Grid>
         </Grid>
-      </Card>
+      </Paper>
     </Box>
   );
 };

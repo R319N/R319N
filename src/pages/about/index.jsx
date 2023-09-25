@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { staggerContainer } from "@/utils/motion";
-import { Container } from "@mui/material";
+import Container from "@mui/material/Container";
 import styles from "../../styles";
 import Creator from "../../components/creator";
 

@@ -1,15 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
-import {
-  Box,
-  Button,
-  CardHeader,
-  Container,
-  Grid,
-  Paper,
-  Typography,
-} from "@mui/material";
+
+// *** MUI5 imports ***
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import CardHeader from "@mui/material/CardHeader";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import Button from "@mui/material/Button";
+
 import { TitleText, TypingText } from "@/components/CustomTexts";
 import { myProjects } from "@/constants";
 import Image from "next/image";

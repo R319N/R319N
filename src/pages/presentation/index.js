@@ -4,11 +4,10 @@ import ParticlesBackground from "@/components/particlesBackground";
 import styles from "@/styles";
 import { staggerContainer } from "@/utils/motion";
 import { gene20BaseTheme } from "@/utils/theme";
-import { Box, useMediaQuery } from "@mui/material";
+import Box from "@mui/material/Box";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { motion } from "framer-motion";
 import PortfolioPresentation from "@/components/PresentationComponents/portfolioPresentation";
-
-
 
 const Presentation = () => {
   const theme = gene20BaseTheme;
@@ -40,7 +39,8 @@ const Presentation = () => {
         >
           <Box
             sx={{
-              backgroundImage: `linear-gradient(to bottom left ,#0303d367 ,#00f3f3e7 , #0303e3a7 , #000000)`,
+              backgroundImage: `linear-gradient(to bottom left ,
+                #000047ee ,#002049ee , #000044 , #000000)`,
               height: "100%",
               backdropFilter: "blur(1px)",
             }}

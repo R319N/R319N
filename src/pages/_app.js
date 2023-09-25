@@ -5,12 +5,17 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider } from "@emotion/react";
 import createEmotionCache from "@/utils/createEmotionCache";
 import Layout from "@/components/Layouts/Layout";
-import { Box, Paper, ThemeProvider } from "@mui/material";
+
+// *** MUI5 imports ***
+import Box from "@mui/material/Box";
+import { ThemeProvider } from "@mui/material";
+import Paper from "@mui/material/Paper";
+
 import "../styles/globals.css";
 import "@fontsource/roboto";
 import ThemeToogler from "@/components/themeToogler/ThemeToogler";
 import Footer from "@/components/footer";
-import { gene20BaseTheme, gene20DarkTheme } from "@/utils/theme";
+import { gene20DarkTheme } from "@/utils/theme";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -31,9 +36,12 @@ const MyApp = (props) => {
         <link rel="shortcut icon" href="/icons/favicon.ico" />
         <title>WILFRED REIGN</title>
       </Head>
-      
-      <ThemeProvider theme={darkMode ? gene20DarkTheme : gene20BaseTheme}>
-        <Paper variant="outlined" sx={{ minHeight: "100vh", height: "100%", overflow: "hidden" }}>
+
+      <ThemeProvider theme={gene20DarkTheme}>
+        <Paper
+          variant="outlined"
+          sx={{ minHeight: "100vh", height: "100%", overflow: "hidden" }}
+        >
           <Layout>
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to
             build upon. */}
